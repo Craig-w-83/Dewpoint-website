@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dewpoint Feral Detection — Know what you're dealing with</title>
+<meta name="description" content="Thermal drone surveys that locate feral pigs, deer and foxes at first light, delivered as GPS-mapped reports for landholders, councils and NRM bodies across south-east Queensland.">
+<link rel="icon" type="image/svg+xml" href="assets/dewpoint_mark_only.svg">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</head>
+<body>
+
+<div style="background:var(--ironbark); color:var(--bone); font-family:var(--font-body); min-height:100vh;">
+
+  <nav class="dp-container dp-nav-row" style="display:flex; align-items:center; justify-content:space-between; gap:20px; padding:14px 32px; border-bottom:1px solid var(--border-subtle); position:sticky; top:0; background:rgba(19,31,25,0.88); backdrop-filter:blur(8px); z-index:10; flex-wrap:nowrap;">
+    <div class="dp-logo-row" style="display:flex; align-items:center; gap:16px; flex-shrink:0;">
+      <div class="dp-logo-crop" style="flex-shrink:0; display:flex; align-items:center;">
+        <img class="dp-mark-img" src="assets/dewpoint_mark_only.svg" alt="Dewpoint scan-cone mark" style="height:88px; width:auto; display:block;" />
+      </div>
+      <div style="display:flex; flex-direction:column; line-height:1.1;">
+        <span class="dp-wordmark-brand" style="font-family:var(--font-display); font-weight:800; font-size:34px; letter-spacing:0.05em; color:var(--bone); white-space:nowrap;">DEWPOINT</span>
+        <span class="dp-wordmark-sub" style="font-family:var(--font-display); font-weight:600; font-size:17px; letter-spacing:0.09em; color:var(--thermal-amber); margin-top:3px; white-space:nowrap;">FERAL DETECTION</span>
+      </div>
+    </div>
+    <div class="dp-nav-links" style="display:flex; align-items:center; gap:24px; flex-wrap:wrap; justify-content:flex-end; margin-left:auto;">
+      <a href="#what-we-do" class="dp-nav-link" style="font-family:var(--font-display); font-size:14px; text-transform:uppercase; letter-spacing:0.08em; color:var(--mist); text-decoration:none; font-weight:500; white-space:nowrap;">What we do</a>
+      <a href="#who-its-for" class="dp-nav-link" style="font-family:var(--font-display); font-size:14px; text-transform:uppercase; letter-spacing:0.08em; color:var(--mist); text-decoration:none; font-weight:500; white-space:nowrap;">Who it's for</a>
+      <a href="#how-it-works" class="dp-nav-link" style="font-family:var(--font-display); font-size:14px; text-transform:uppercase; letter-spacing:0.08em; color:var(--mist); text-decoration:none; font-weight:500; white-space:nowrap;">How it works</a>
+      <a href="#why-dewpoint" class="dp-nav-link" style="font-family:var(--font-display); font-size:14px; text-transform:uppercase; letter-spacing:0.08em; color:var(--mist); text-decoration:none; font-weight:500; white-space:nowrap;">Why Dewpoint</a>
+    </div>
+    <a href="#contact" class="dp-desktop-cta" style="text-decoration:none; flex-shrink:0;">
+      <span class="btn btn-detection btn-sm">Get a quote</span>
+    </a>
+    <button class="dp-hamburger" aria-label="Menu" style="display:none; align-items:center; justify-content:center; width:40px; height:40px; flex-shrink:0; background:transparent; border:1px solid var(--border-structure); border-radius:2px; color:var(--bone); cursor:pointer;">
+      <i class="icon-menu" data-lucide="menu" style="width:20px; height:20px;"></i>
+      <i class="icon-close" data-lucide="x" style="width:20px; height:20px;"></i>
+    </button>
+    <div class="mobile-nav">
+      <a href="#what-we-do" style="font-family:var(--font-display); font-size:15px; text-transform:uppercase; letter-spacing:0.08em; color:var(--mist); text-decoration:none; font-weight:500; padding:14px 0; border-bottom:1px solid var(--border-subtle);">What we do</a>
+      <a href="#who-its-for" style="font-family:var(--font-display); font-size:15px; text-transform:uppercase; letter-spacing:0.08em; color:var(--mist); text-decoration:none; font-weight:500; padding:14px 0; border-bottom:1px solid var(--border-subtle);">Who it's for</a>
+      <a href="#how-it-works" style="font-family:var(--font-display); font-size:15px; text-transform:uppercase; letter-spacing:0.08em; color:var(--mist); text-decoration:none; font-weight:500; padding:14px 0; border-bottom:1px solid var(--border-subtle);">How it works</a>
+      <a href="#why-dewpoint" style="font-family:var(--font-display); font-size:15px; text-transform:uppercase; letter-spacing:0.08em; color:var(--mist); text-decoration:none; font-weight:500; padding:14px 0; border-bottom:1px solid var(--border-subtle);">Why Dewpoint</a>
+      <a href="#contact" style="text-decoration:none; margin-top:16px;">
+        <span class="btn btn-detection btn-md" style="width:100%;">Get a quote</span>
+      </a>
+    </div>
+  </nav>
+
+  <div style="position:relative; overflow:hidden; background:radial-gradient(1000px 560px at 15% -10%, color-mix(in srgb, var(--eucalypt) 16%, transparent), transparent 60%);">
+  <div data-parallax="0.16" data-parallax-max="150" style="position:absolute; inset:-160px; z-index:0; overflow:hidden; will-change:transform;">
+    <img src="assets/bg-hero-fencelines.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:60% 45%; filter:grayscale(0.85) sepia(0.25) hue-rotate(50deg) saturate(1.6) brightness(0.82) contrast(1.05);" />
+    <div style="position:absolute; inset:0; background:linear-gradient(100deg, rgba(19,31,25,0.35) 0%, transparent 55%, color-mix(in srgb, var(--thermal-amber) 32%, transparent) 100%);"></div>
+    <div style="position:absolute; inset:0; background:linear-gradient(90deg, rgba(19,31,25,0.76) 0%, rgba(19,31,25,0.56) 32%, rgba(19,31,25,0.2) 62%, rgba(19,31,25,0.46) 100%);"></div>
+  </div>
+  <header class="dp-2col-grid dp-container" style="position:relative; z-index:1; display:grid; grid-template-columns:1.2fr 1fr; gap:48px; align-items:stretch; padding:80px 32px 64px; max-width:1320px; margin:0 auto;">
+    <div style="display:flex; flex-direction:column;">
+      <div style="margin-bottom:20px;">
+        <span class="badge badge-active">South-east Queensland</span>
+      </div>
+      <h1 style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.05em; font-size:58px; line-height:1.04; margin:0 0 22px; color:var(--bone);">Know what you're<br/>dealing with</h1>
+      <p style="font-size:19px; line-height:1.6; color:var(--mist); max-width:46ch; margin:0 0 32px;">Thermal drone surveys that locate targeted fauna including feral pigs, deer and foxes at first light, delivered as GPS-mapped reports that can assist with biosecurity compliance.</p>
+      <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:auto;">
+        <a href="#contact" class="btn btn-detection btn-lg">Get a quote</a>
+        <button class="btn btn-ghost btn-lg" data-sample-report>Request a sample report</button>
+      </div>
+    </div>
+    <div id="hero-graphic" style="position:relative; height:100%; min-height:360px; border-radius:8px; overflow:hidden; border:1px solid var(--border-structure); background:radial-gradient(280px 220px at 62% 45%, rgba(255,160,40,0.07), #0D1712 70%); will-change:transform;">
+      <div style="position:absolute; inset:0; background-image:linear-gradient(0deg,rgba(143,180,154,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(143,180,154,.06) 1px,transparent 1px); background-size:30px 30px;"></div>
+      <div class="dp-hero-pad" style="position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; padding:0 40px;">
+        <div style="display:flex; align-items:center; gap:14px; margin-bottom:22px;">
+          <span style="position:relative; width:16px; height:16px; display:inline-block;">
+            <span style="position:absolute; left:50%; top:50%; width:16px; height:16px; border-radius:50%; background:var(--thermal-amber); box-shadow:var(--glow-detection); transform:translate(-50%,-50%);"></span>
+            <span style="position:absolute; left:50%; top:50%; width:16px; height:16px; border-radius:50%; border:1px solid var(--thermal-amber); transform:translate(-50%,-50%); animation:dp-pulse-ring 2.2s ease-out infinite;"></span>
+          </span>
+          <span style="font-family:var(--font-display); font-size:13px; text-transform:uppercase; letter-spacing:0.14em; color:var(--mist);">From a recent survey</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:18px; margin-bottom:18px;">
+          <span class="dp-hero-num" style="font-family:var(--font-display); font-weight:800; font-size:112px; line-height:1; color:var(--thermal-amber);">6</span>
+          <span style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.05em; font-size:22px; color:var(--bone); line-height:1.25;">feral pigs<br/>located</span>
+        </div>
+        <div style="font-size:17px; line-height:1.6; color:var(--mist); max-width:34ch;">Found across one 40-hectare paddock at first light, mapped to within 10 metres.</div>
+      </div>
+    </div>
+  </header>
+  </div>
+
+  <section id="what-we-do" data-reveal="true" style="border-top:1px solid var(--border-subtle); background:linear-gradient(180deg, var(--ironbark) 0%, var(--ironbark-800) 14%, var(--ironbark-800) 86%, color-mix(in srgb, var(--eucalypt-deep) 30%, var(--ironbark-800)) 100%); position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; background:radial-gradient(560px 320px at 15% 20%, color-mix(in srgb, var(--eucalypt) 16%, transparent), transparent 70%); pointer-events:none;"></div>
+    <div class="dp-container" style="position:relative; z-index:1; max-width:1320px; margin:0 auto; padding:72px 32px;">
+      <div style="font-family:var(--font-display); font-weight:600; font-size:16px; text-transform:uppercase; letter-spacing:0.12em; color:var(--mist); margin-bottom:16px;">What we do</div>
+      <div class="dp-2col-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start;">
+        <h2 style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.05em; font-size:34px; line-height:1.15; margin:0; color:var(--bone);">We provide evidence, not guesswork.</h2>
+        <p style="font-size:18px; line-height:1.65; color:var(--mist); margin:0;">We operate thermal-camera drones at first light to detect animals when their natural body warmth has greater contrast against the cool ground. Every heat signature is checked across multiple frames to confirm its legitimacy, then mapped to GPS coordinates. This process provides real, usable data you can hand to a pest controller, a compliance officer, or utilise within your own biosecurity management plan.</p>
+      </div>
+      <div class="dp-3col-grid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:48px;">
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <i data-lucide="thermometer-sun" style="width:24px; height:24px; color:var(--eucalypt-light);"></i>
+          <div style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.08em; font-size:14px; color:var(--bone);">Thermal detection</div>
+          <p style="font-size:17px; line-height:1.6; color:var(--mist); margin:0;">Animals show up against cool ground even in thick cover or low light.</p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <i data-lucide="sunrise" style="width:24px; height:24px; color:var(--eucalypt-light);"></i>
+          <div style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.08em; font-size:14px; color:var(--bone);">First-light surveys</div>
+          <p style="font-size:17px; line-height:1.6; color:var(--mist); margin:0;">Flights are timed to dawn, when the temperature contrast is greatest.</p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <i data-lucide="map-pin" style="width:24px; height:24px; color:var(--eucalypt-light);"></i>
+          <div style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.08em; font-size:14px; color:var(--bone);">GPS-mapped evidence</div>
+          <p style="font-size:17px; line-height:1.6; color:var(--mist); margin:0;">Every detection is plotted to within 10 metres and logged with a timestamp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="who-its-for" data-reveal="true" class="dp-container" style="max-width:1320px; margin:0 auto; padding:72px 32px; position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; background:radial-gradient(700px 320px at 50% 0%, color-mix(in srgb, var(--eucalypt) 10%, transparent), transparent 70%); pointer-events:none;"></div>
+    <div style="position:relative; font-family:var(--font-display); font-weight:600; font-size:16px; text-transform:uppercase; letter-spacing:0.12em; color:var(--mist); margin-bottom:28px;">Who it's for</div>
+    <div class="dp-3col-grid" style="position:relative; display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
+      <div class="card card-raised card-hover" style="transition:transform 220ms ease, border-color 220ms ease;">
+        <i data-lucide="tractor" style="width:22px; height:22px; color:var(--eucalypt-light); display:block; margin-bottom:14px;"></i>
+        <div style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.08em; font-size:15px; color:var(--bone); margin-bottom:8px;">Landholders &amp; farmers</div>
+        <p style="font-size:17px; line-height:1.6; color:var(--mist); margin:0;">Know what's impacting your property! Get the evidence you need for effective pest control, fence planning and property management.</p>
+      </div>
+      <div class="card card-raised card-hover" style="transition:transform 220ms ease, border-color 220ms ease;">
+        <i data-lucide="landmark" style="width:22px; height:22px; color:var(--eucalypt-light); display:block; margin-bottom:14px;"></i>
+        <div style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.08em; font-size:15px; color:var(--bone); margin-bottom:8px;">Councils &amp; Natural Resource Management (NRM) bodies</div>
+        <p style="font-size:17px; line-height:1.6; color:var(--mist); margin:0;">Compliance-grade survey data for biosecurity programs, catchment plans and pest reporting — defensible counts and mapped locations you can cite in funding applications, control-program reviews and community reporting.</p>
+      </div>
+      <div class="card card-raised card-hover" style="transition:transform 220ms ease, border-color 220ms ease;">
+        <i data-lucide="crosshair" style="width:22px; height:22px; color:var(--eucalypt-light); display:block; margin-bottom:14px;"></i>
+        <div style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.08em; font-size:15px; color:var(--bone); margin-bottom:8px;">Pest controllers</div>
+        <p style="font-size:17px; line-height:1.6; color:var(--mist); margin:0;">Know where activity is concentrated before you plan your service. Our surveys give you likely numbers and activity areas across a property, planning-grade evidence to maximise efficiencies and provide greater value to the end client.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" data-reveal="true" style="border-top:1px solid var(--border-subtle); border-bottom:1px solid var(--border-subtle); background:var(--ironbark-800); position:relative; overflow:hidden;">
+    <div data-parallax="0.14" data-parallax-max="110" style="position:absolute; inset:-120px; z-index:0; overflow:hidden; will-change:transform;">
+      <img src="assets/bg-river-mist.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 55%; filter:grayscale(0.85) sepia(0.25) hue-rotate(50deg) saturate(1.6) brightness(0.72) contrast(1.05);" />
+      <div style="position:absolute; inset:0; background:linear-gradient(160deg, rgba(19,31,25,0.3) 0%, transparent 50%, color-mix(in srgb, var(--thermal-amber) 27%, transparent) 100%);"></div>
+      <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(19,31,25,0.72) 0%, rgba(19,31,25,0.38) 40%, rgba(19,31,25,0.36) 70%, rgba(19,31,25,0.72) 100%);"></div>
+    </div>
+    <div class="dp-container" style="position:relative; z-index:1; max-width:1320px; margin:0 auto; padding:72px 32px;">
+      <div style="font-family:var(--font-display); font-weight:600; font-size:16px; text-transform:uppercase; letter-spacing:0.12em; color:var(--mist); margin-bottom:28px;">How it works</div>
+      <div class="dp-3col-grid" style="display:grid; grid-template-columns:repeat(4,1fr); gap:20px;">
+        <div>
+          <div style="font-family:var(--font-display); font-weight:800; font-size:13px; color:var(--mist-dim); margin-bottom:14px;">01</div>
+          <div style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.08em; font-size:14px; color:var(--bone); margin-bottom:8px;">Book a flight window</div>
+          <p style="font-size:17px; line-height:1.6; color:var(--mist); margin:0;">Tell us the property and target species. We confirm a dawn window that fits to your schedule and requirements.</p>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display); font-weight:800; font-size:13px; color:var(--mist-dim); margin-bottom:14px;">02</div>
+          <div style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.08em; font-size:14px; color:var(--bone); margin-bottom:8px;">We fly at dawn</div>
+          <p style="font-size:17px; line-height:1.6; color:var(--mist); margin:0;">Thermal results are best when contrast between the heat signature of the target animal and the ground is at the greatest.</p>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display); font-weight:800; font-size:13px; color:var(--mist-dim); margin-bottom:14px;">03</div>
+          <div style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.08em; font-size:14px; color:var(--bone); margin-bottom:8px;">GPS-mapped report</div>
+          <p style="font-size:17px; line-height:1.6; color:var(--mist); margin:0;">Where possible, estimated counts are given along with species, locations mapped to within 10 metres, with detailed documentation.</p>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display); font-weight:800; font-size:13px; color:var(--mist-dim); margin-bottom:14px;">04</div>
+          <div style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.08em; font-size:14px; color:var(--bone); margin-bottom:8px;">You act on it</div>
+          <p style="font-size:17px; line-height:1.6; color:var(--mist); margin:0;">With the right evidence, comes confidence in decision making. Dewpoint provides you with the information you need for the next step in property and land management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why-dewpoint" data-reveal="true" style="position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; z-index:0; background:var(--ironbark-800);"></div>
+    <div style="position:absolute; inset:0; z-index:1; pointer-events:none; background:linear-gradient(180deg, rgba(13,23,18,0.93) 0%, rgba(13,23,18,0.9) 60%, var(--ironbark) 100%);"></div>
+    <div class="dp-container" style="position:relative; z-index:2; max-width:1320px; margin:0 auto; padding:72px 32px;">
+    <div style="font-family:var(--font-display); font-weight:600; font-size:16px; text-transform:uppercase; letter-spacing:0.12em; color:var(--mist); margin-bottom:16px;">Why Dewpoint</div>
+    <h2 style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.05em; font-size:32px; line-height:1.15; margin:0 0 28px; color:var(--bone);">Evidence backed by facts</h2>
+    <div class="dp-3col-grid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
+      <div class="card card-raised card-hover" style="transition:transform 220ms ease, border-color 220ms ease;">
+        <i data-lucide="shield-check" style="width:22px; height:22px; color:var(--eucalypt-light); display:block; margin-bottom:14px;"></i>
+        <div style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.08em; font-size:14px; color:var(--bone); margin-bottom:10px;">Reports built to provide:</div>
+        <ul style="margin:0; padding-left:18px; display:flex; flex-direction:column; gap:6px; font-size:17px; line-height:1.6; color:var(--mist);">
+          <li>Support and context to biosecurity and NRM reporting.</li>
+          <li>Pre-planning for pest management.</li>
+          <li>Necessary knowledge for biodiversity surveys and applicable controls.</li>
+        </ul>
+      </div>
+      <div class="card card-raised card-hover" style="transition:transform 220ms ease, border-color 220ms ease;">
+        <i data-lucide="leaf" style="width:22px; height:22px; color:var(--eucalypt-light); display:block; margin-bottom:14px;"></i>
+        <div style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.08em; font-size:14px; color:var(--bone); margin-bottom:8px;">Fauna-aware surveying</div>
+        <ul style="margin:0; padding-left:18px; display:flex; flex-direction:column; gap:6px; font-size:17px; line-height:1.6; color:var(--mist);">
+          <li>Signatures are checked across multiple frames of reference to rule out non-target species of fauna.</li>
+          <li>Assess areas where access is limited or restricted.</li>
+          <li>Provide evidence of potential impact to the surrounding environment.</li>
+        </ul>
+      </div>
+      <div class="card card-raised card-hover" style="transition:transform 220ms ease, border-color 220ms ease;">
+        <i data-lucide="cloud-drizzle" style="width:22px; height:22px; color:var(--eucalypt-light); display:block; margin-bottom:14px;"></i>
+        <div style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.08em; font-size:14px; color:var(--bone); margin-bottom:8px;">Weather &amp; safety discipline</div>
+        <p style="font-size:17px; line-height:1.6; color:var(--mist); margin:0;">Flights held to CASA-accredited operating standards and first-light weather windows. Weather can be unpredictable, as such, we always operate with a safety-first approach.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="sample-report" data-reveal="true" style="border-top:1px solid var(--border-subtle); background:linear-gradient(180deg, var(--ironbark) 0%, var(--ironbark-800) 10%, var(--ironbark-800) 90%, color-mix(in srgb, var(--eucalypt-deep) 28%, var(--ironbark-800)) 100%); position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; background:radial-gradient(560px 320px at 90% 30%, color-mix(in srgb, var(--eucalypt) 14%, transparent), transparent 70%); pointer-events:none;"></div>
+    <div class="dp-2col-grid dp-container" style="position:relative; max-width:1320px; margin:0 auto; padding:72px 32px; display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;">
+      <div>
+        <h2 style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.05em; font-size:30px; line-height:1.15; margin:0 0 18px; color:var(--bone);">What you'll receive</h2>
+        <p style="font-size:17px; line-height:1.65; color:var(--mist); margin:0 0 24px; max-width:44ch;">Every survey includes a mapped report: estimated detection counts by species, GPS-plotted locations, thermal capture stills and a methodology summary, ready to attach to a compliance file or hand straight to a pest controller.</p>
+        <button class="btn btn-ghost btn-md" data-sample-report>Request a sample report</button>
+      </div>
+      <div style="position:relative; height:300px; border-radius:8px; overflow:hidden; border:1px solid var(--border-structure); background:var(--ironbark-700);">
+        <div style="position:absolute; inset:0; background-image:linear-gradient(0deg,rgba(143,180,154,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(143,180,154,.05) 1px,transparent 1px); background-size:24px 24px;"></div>
+        <div style="position:absolute; top:20px; left:20px; right:20px; display:flex; justify-content:space-between; font-family:var(--font-display); font-size:11px; text-transform:uppercase; letter-spacing:0.12em; color:var(--mist);">
+          <span>Survey report</span><span>Ref. DP-0001</span>
+        </div>
+        <span style="position:absolute; left:38%; top:48%; width:16px; height:16px; border-radius:50%; background:var(--thermal-amber); box-shadow:var(--glow-detection); transform:translate(-50%,-50%);"></span>
+        <span style="position:absolute; left:64%; top:64%; width:16px; height:16px; border-radius:50%; background:var(--thermal-amber); box-shadow:var(--glow-detection); transform:translate(-50%,-50%);"></span>
+        <span style="position:absolute; left:52%; top:32%; width:16px; height:16px; border-radius:50%; background:var(--thermal-amber); box-shadow:var(--glow-detection); transform:translate(-50%,-50%);"></span>
+        <div style="position:absolute; left:20px; bottom:20px; font-family:var(--font-display); font-size:12px; text-transform:uppercase; letter-spacing:0.1em; color:var(--bone);">3 detections mapped</div>
+      </div>
+    </div>
+  </section>
+
+  <div style="position:relative; overflow:hidden; border-top:1px solid var(--border-subtle);">
+  <div data-parallax="0.14" data-parallax-max="110" style="position:absolute; inset:-120px; z-index:0; overflow:hidden; will-change:transform;">
+    <img src="assets/bg-fog-sunrays.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 60%; filter:grayscale(0.85) sepia(0.25) hue-rotate(50deg) saturate(1.5) brightness(0.7) contrast(1.05);" />
+    <div style="position:absolute; inset:0; background:linear-gradient(100deg, rgba(19,31,25,0.32) 0%, transparent 55%, color-mix(in srgb, var(--thermal-amber) 26%, transparent) 100%);"></div>
+    <div style="position:absolute; inset:0; background:rgba(13,23,18,0.66);"></div>
+  </div>
+  <section id="contact" data-reveal="true" class="dp-container" style="max-width:1320px; margin:0 auto; padding:72px 32px 88px; position:relative; z-index:1;">
+    <div style="position:relative;">
+      <div style="text-align:center; max-width:640px; margin:0 auto 36px;">
+        <div style="font-family:var(--font-display); font-weight:600; font-size:16px; text-transform:uppercase; letter-spacing:0.12em; color:var(--mist); margin-bottom:16px;">Get in touch</div>
+        <h2 style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.06em; font-size:38px; line-height:1.15; margin:0 0 16px; color:var(--bone);">Contact us</h2>
+        <p style="font-size:17px; line-height:1.6; color:var(--mist); margin:0;">Operating across South-east Queensland. Questions about a survey, a report, or a partnership — send us a message and we'll get back to you.</p>
+      </div>
+      <div class="card card-bordered">
+        <div class="dp-2col-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:40px;">
+        <div>
+          <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:28px;">
+            <div style="display:flex; align-items:center; gap:10px;"><i data-lucide="phone" style="width:18px; height:18px; color:var(--eucalypt-light);"></i><span style="font-size:16px; color:var(--bone);">0408 210 563</span></div>
+            <div style="display:flex; align-items:center; gap:10px;"><i data-lucide="mail" style="width:18px; height:18px; color:var(--eucalypt-light);"></i><span style="font-size:16px; color:var(--bone);">admin@dewpointdetection.com.au</span></div>
+            <div style="display:flex; align-items:center; gap:10px;"><i data-lucide="map-pin" style="width:18px; height:18px; color:var(--eucalypt-light);"></i><span style="font-size:16px; color:var(--bone);">South-east Queensland</span></div>
+          </div>
+          <div style="border-top:1px solid var(--border-subtle); padding-top:24px;">
+            <div style="font-family:var(--font-display); font-size:11px; text-transform:uppercase; letter-spacing:0.12em; color:var(--mist); margin-bottom:10px;">Ready to book a survey?</div>
+            <p style="font-size:16px; line-height:1.55; color:var(--mist); margin:0 0 16px; max-width:36ch;">Get a quote for your property or required service.</p>
+            <button class="btn btn-detection btn-md" data-open-quote>Get a quote</button>
+          </div>
+        </div>
+        <div data-form-wrap>
+          <div data-form-success style="display:none; flex-direction:column; gap:12px; padding:8px 0;">
+            <span class="badge badge-detection">Message received</span>
+            <p style="font-size:17px; line-height:1.6; color:var(--bone); margin:0;">Thanks — we'll be in touch within two business days.</p>
+          </div>
+          <form data-form-fields data-ajax-form name="contact" method="POST" action="thank-you.html" data-netlify="true" netlify-honeypot="bot-field" class="dp-form-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; align-content:start;">
+            <input type="hidden" name="form-name" value="contact">
+            <p class="hp-field"><label>Don't fill this out: <input name="bot-field"></label></p>
+            <label class="field">
+              <span class="field-label">Name</span>
+              <input type="text" name="name" placeholder="Jane Smith" required>
+            </label>
+            <label class="field">
+              <span class="field-label">Phone</span>
+              <input type="tel" name="phone" placeholder="0408 210 563">
+            </label>
+            <label class="field" style="grid-column: 1 / -1;">
+              <span class="field-label">Email</span>
+              <input type="email" name="email" placeholder="jane@example.com" required>
+            </label>
+            <label class="field" style="grid-column: 1 / -1;">
+              <span class="field-label">Subject</span>
+              <input type="text" id="contact-subject" name="subject" placeholder="What's this about?">
+            </label>
+            <label style="grid-column: 1 / -1; display:flex; flex-direction:column; gap:6px;">
+              <span class="field-label">Message</span>
+              <textarea id="contact-message" name="message" rows="4" placeholder="Tell us a little about what you need."></textarea>
+            </label>
+            <div style="grid-column: 1 / -1; margin-top:4px;">
+              <button type="submit" class="btn btn-detection btn-md">Send message</button>
+            </div>
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <div id="quote-modal" class="quote-modal">
+    <div style="position:relative; width:100%; max-width:560px; max-height:88vh; overflow-y:auto;">
+      <div class="card card-raised dp-modal-card" style="padding:36px; position:relative;">
+        <button data-close-quote aria-label="Close" style="position:absolute; top:20px; right:20px; width:32px; height:32px; display:flex; align-items:center; justify-content:center; background:transparent; border:1px solid var(--border-structure); border-radius:2px; color:var(--mist); cursor:pointer;">
+          <i data-lucide="x" style="width:16px; height:16px;"></i>
+        </button>
+        <div style="font-family:var(--font-display); font-size:12px; text-transform:uppercase; letter-spacing:0.16em; color:var(--mist); margin-bottom:12px;">Request a quote</div>
+        <h2 style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.05em; font-size:26px; line-height:1.15; margin:0 0 20px; color:var(--bone); max-width:80%;">Get a quote</h2>
+        <div data-form-wrap>
+          <div data-form-success style="display:none; flex-direction:column; gap:12px; padding:8px 0;">
+            <span class="badge badge-detection">Quote request received</span>
+            <p style="font-size:17px; line-height:1.6; color:var(--bone); margin:0;">Thanks — we'll come back to you with a fixed quote and flight window within two business days.</p>
+          </div>
+          <form data-form-fields data-ajax-form name="quote" method="POST" action="thank-you.html" data-netlify="true" netlify-honeypot="bot-field" class="dp-form-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; align-content:start;">
+            <input type="hidden" name="form-name" value="quote">
+            <p class="hp-field"><label>Don't fill this out: <input name="bot-field"></label></p>
+            <label class="field" style="grid-column: 1 / -1;">
+              <span class="field-label">Property name</span>
+              <input type="text" name="property_name" placeholder="e.g. Wattle Downs">
+            </label>
+            <label class="field">
+              <span class="field-label">Property size (ha)</span>
+              <input type="number" name="property_size_ha" placeholder="1240">
+            </label>
+            <label class="field">
+              <span class="field-label">Target species</span>
+              <select name="target_species">
+                <option>Feral pigs</option>
+                <option>Feral deer</option>
+                <option>Foxes</option>
+                <option>Multiple species</option>
+              </select>
+            </label>
+            <label class="field" style="grid-column: 1 / -1;">
+              <span class="field-label">Approximate location</span>
+              <input type="text" name="location" placeholder="Suburb or locality">
+            </label>
+            <label class="field" style="grid-column: 1 / -1;">
+              <span class="field-label">Preferred timing</span>
+              <select name="preferred_timing">
+                <option>As soon as possible</option>
+                <option>Within 2 weeks</option>
+                <option>Within a month</option>
+                <option>Flexible</option>
+              </select>
+            </label>
+            <label style="grid-column: 1 / -1; display:flex; flex-direction:column; gap:6px;">
+              <span class="field-label">Additional details</span>
+              <textarea name="additional_details" rows="3" placeholder="Access notes, terrain, prior sightings — anything that helps us scope the flight."></textarea>
+            </label>
+            <div style="grid-column: 1 / -1; margin-top:4px;">
+              <button type="submit" class="btn btn-detection btn-md">Send request</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer style="border-top:1px solid var(--border-subtle); padding:32px 32px;">
+    <div class="dp-footer-row dp-container" style="max-width:1320px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; gap:24px; flex-wrap:nowrap;">
+      <div style="display:flex; align-items:center; gap:14px; flex-shrink:0;">
+        <div style="flex-shrink:0; display:flex; align-items:center;">
+          <img src="assets/dewpoint_mark_only.svg" alt="Dewpoint scan-cone mark" style="height:64px; width:auto; display:block;" />
+        </div>
+        <div style="display:flex; flex-direction:column; line-height:1.15;">
+          <span style="font-family:var(--font-display); font-weight:800; font-size:19px; letter-spacing:0.08em; color:var(--bone);">DEWPOINT</span>
+          <span style="font-family:var(--font-display); font-weight:600; font-size:10px; letter-spacing:0.14em; color:var(--thermal-amber); margin-top:2px;">FERAL DETECTION</span>
+        </div>
+      </div>
+      <div style="flex:1; display:flex; flex-wrap:wrap; justify-content:center; align-items:baseline; gap:6px; row-gap:4px;">
+        <span style="font-family:var(--font-display); font-size:11px; text-transform:uppercase; letter-spacing:0.12em; color:var(--mist-dim);">Dewpoint Feral Detection &middot; South-east Queensland &middot; CASA-accredited operations &middot; ABN 27 279 471 827</span>
+        <span style="font-family:var(--font-display); font-size:11px; text-transform:uppercase; letter-spacing:0.14em; color:var(--mist-dim);">dewpointdetection.com.au</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>

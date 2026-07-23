@@ -1,0 +1,132 @@
+/* Dewpoint marketing site — base styles + components */
+
+*{box-sizing:border-box;}
+html,body{margin:0; background:var(--ironbark);}
+body{font-family:var(--font-body); color:var(--bone);}
+a{color:var(--eucalypt-light);}
+a:hover{color:var(--bone);}
+img{max-width:100%;}
+::selection{background:var(--eucalypt); color:var(--bone);}
+
+button{font:inherit;}
+
+@keyframes dp-pulse-ring{
+  0%{transform:translate(-50%,-50%) scale(0.9); opacity:0.9;}
+  70%{transform:translate(-50%,-50%) scale(2.1); opacity:0;}
+  100%{transform:translate(-50%,-50%) scale(2.1); opacity:0;}
+}
+
+[data-reveal]{opacity:0; transform:translateY(44px); transition:opacity 760ms cubic-bezier(.2,.6,.2,1), transform 760ms cubic-bezier(.2,.6,.2,1);}
+[data-reveal].dp-visible{opacity:1; transform:translateY(0);}
+
+/* ---------------- Buttons ---------------- */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  font-family:var(--font-display); font-weight:700; text-transform:uppercase;
+  letter-spacing:0.08em; border-radius:var(--radius-1); cursor:pointer;
+  text-decoration:none; white-space:nowrap; border:1px solid transparent;
+  transition:background var(--dur-base) var(--ease-standard), border-color var(--dur-base) var(--ease-standard), color var(--dur-base) var(--ease-standard), filter var(--dur-base) var(--ease-standard);
+}
+.btn-detection{ background:var(--thermal-amber); border-color:var(--thermal-amber); color:var(--on-detection); }
+.btn-detection:hover{ background:var(--white-hot); border-color:var(--white-hot); }
+.btn-ghost{ background:transparent; border-color:var(--border-structure); color:var(--bone); }
+.btn-ghost:hover{ border-color:var(--border-strong); color:var(--thermal-amber); }
+.btn-sm{ height:32px; padding:0 16px; font-size:12px; }
+.btn-md{ height:44px; padding:0 22px; font-size:13px; }
+.btn-lg{ height:48px; padding:0 26px; font-size:14px; }
+
+/* ---------------- Badges ---------------- */
+.badge{
+  display:inline-flex; align-items:center; height:24px; padding:0 12px;
+  border-radius:var(--radius-pill); font-family:var(--font-display);
+  font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.1em;
+  border:1px solid;
+}
+.badge-active{ border-color:var(--border-structure); color:var(--bone); background:color-mix(in srgb, var(--eucalypt) 22%, transparent); }
+.badge-detection{ border-color:var(--thermal-amber); color:var(--thermal-amber); background:color-mix(in srgb, var(--thermal-amber) 12%, transparent); }
+
+/* ---------------- Cards ---------------- */
+.card{ border-radius:var(--radius-3); padding:28px; }
+.card-raised{ background:var(--surface-raised); border:1px solid var(--border-subtle); box-shadow:var(--shadow-raised); }
+.card-bordered{ background:var(--ironbark-600); border:1px solid var(--border-structure); padding:40px; }
+.card-hover:hover{ transform:translateY(-4px); border-color:var(--border-strong); }
+
+/* ---------------- Form fields ---------------- */
+.field{ display:flex; flex-direction:column; gap:6px; }
+.field-label{ font-family:var(--font-display); font-size:11px; text-transform:uppercase; letter-spacing:0.1em; color:var(--mist); font-weight:500; }
+.field input, .field select, .field textarea{
+  font-family:var(--font-body); font-size:16px; color:var(--bone);
+  background:var(--ironbark-800); border:1px solid var(--border-structure);
+  border-radius:var(--radius-1); padding:12px; outline:none; resize:vertical;
+  width:100%;
+}
+.field input:focus, .field select:focus, .field textarea:focus{ border-color:var(--eucalypt-bright); box-shadow:0 0 0 2px color-mix(in srgb, var(--eucalypt-bright) 35%, transparent); }
+.field select{ appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%237E9587' stroke-width='1.6'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 12px center; padding-right:32px; }
+
+/* honeypot field, hidden from real users */
+.hp-field{ position:absolute; left:-9999px; top:-9999px; }
+
+/* ---------------- Layout helpers ---------------- */
+.dp-container{}
+@media (max-width:1024px){
+  .dp-2col-grid{ grid-template-columns:1fr !important; }
+  .dp-3col-grid{ grid-template-columns:repeat(2,1fr) !important; }
+}
+@media (max-width:768px){
+  .dp-nav-links{ display:none !important; }
+  .dp-desktop-cta{ display:none !important; }
+  .dp-hamburger{ display:flex !important; }
+}
+@media (max-width:640px){
+  .dp-container{ padding-left:20px !important; padding-right:20px !important; }
+  .dp-3col-grid{ grid-template-columns:1fr !important; }
+  .dp-form-grid{ grid-template-columns:1fr !important; }
+  .dp-hero-num{ font-size:72px !important; }
+  .dp-hero-pad{ padding-left:24px !important; padding-right:24px !important; }
+  .dp-modal-card{ padding:22px !important; }
+  .dp-footer-row{ flex-direction:column !important; text-align:center !important; }
+  .dp-footer-row > div:first-child{ justify-content:center !important; width:100%; }
+  .dp-wordmark-brand{ font-size:18px !important; }
+  .dp-wordmark-sub{ font-size:10px !important; }
+  h1{ font-size:38px !important; }
+  .dp-mark-img{ height:62px !important; }
+  .dp-logo-row{ gap:8px !important; }
+  .dp-nav-row{ gap:14px !important; }
+  .dp-hamburger{ width:36px !important; height:36px !important; }
+}
+@media (max-width:380px){
+  .dp-wordmark-brand{ font-size:15px !important; }
+  .dp-wordmark-sub{ font-size:9px !important; }
+  .dp-mark-img{ height:56px !important; }
+  .dp-logo-row{ gap:6px !important; }
+}
+
+/* nav link hover (was style-hover in the design canvas) */
+.dp-nav-link{ transition:color 200ms ease; }
+.dp-nav-link:hover{ color:var(--thermal-amber); }
+
+/* ---------------- Mobile nav dropdown ---------------- */
+.mobile-nav{ display:none; }
+.mobile-nav.is-open{
+  display:flex; position:absolute; top:100%; left:0; right:0; z-index:20;
+  background:var(--ironbark-800); border-bottom:1px solid var(--border-subtle);
+  box-shadow:var(--shadow-panel); flex-direction:column; padding:8px 20px 20px;
+}
+
+/* ---------------- Hamburger icon swap ---------------- */
+.dp-hamburger .icon-close{ display:none; }
+.dp-hamburger.is-open .icon-menu{ display:none; }
+.dp-hamburger.is-open .icon-close{ display:block; }
+
+/* ---------------- Quote modal ---------------- */
+.quote-modal{ display:none; }
+.quote-modal.is-open{
+  display:flex; position:fixed; inset:0; z-index:50; align-items:center;
+  justify-content:center; padding:24px; background:rgba(13,23,18,0.78);
+  backdrop-filter:blur(4px);
+}
+
+/* ---------------- Form success / active state toggling ---------------- */
+[data-form-success]{ display:none; }
+.form-sent [data-form-success]{ display:flex; }
+.form-sent [data-form-fields]{ display:none; }

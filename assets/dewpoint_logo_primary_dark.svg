@@ -1,0 +1,25 @@
+<svg viewBox="0 0 800 460" xmlns="http://www.w3.org/2000/svg" font-family="Archivo, &#39;Arial Narrow&#39;, Arial, sans-serif">
+  <rect width="800" height="460" fill="#131F19"></rect>
+
+  
+  <circle cx="400" cy="64" r="7" fill="#F2EDE3"></circle>
+  <line x1="382" y1="64" x2="368" y2="64" stroke="#7E9587" stroke-width="2.5" stroke-linecap="round"></line>
+  <line x1="418" y1="64" x2="432" y2="64" stroke="#7E9587" stroke-width="2.5" stroke-linecap="round"></line>
+
+  
+  <path d="M400 74 L306 240 L494 240 Z" fill="#2A5C48" opacity="0.28"></path>
+  <path d="M400 74 L306 240" stroke="#3C7A5F" stroke-width="2.5" fill="none" stroke-linecap="round"></path>
+  <path d="M400 74 L494 240" stroke="#3C7A5F" stroke-width="2.5" fill="none" stroke-linecap="round"></path>
+
+  
+  <path d="M240 240 C300 232 340 246 400 240 C460 234 506 246 560 240" stroke="#8FB49A" stroke-width="3" fill="none" stroke-linecap="round"></path>
+  <path d="M264 262 C320 256 360 268 416 262 C466 257 506 266 536 262" stroke="#2A5C48" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.8"></path>
+
+  
+  <circle cx="442" cy="228" r="16" fill="#FFA028"></circle>
+  <circle cx="442" cy="228" r="7" fill="#FFE9C4"></circle>
+
+  
+  <text x="400" y="352" text-anchor="middle" fill="#F2EDE3" font-size="54" font-weight="800" letter-spacing="10">DEWPOINT</text>
+  <text x="400" y="392" text-anchor="middle" fill="#FFA028" font-size="19" font-weight="600" letter-spacing="11">FERAL DETECTION</text>
+</svg>

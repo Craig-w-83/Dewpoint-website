@@ -1,0 +1,113 @@
+/* Dewpoint design tokens — colours, typography, spacing, effects, fonts.
+   Ported from the Dewpoint Design System. Do not hand-edit colour values
+   without checking DFD-BRD-001 (brand guidelines) and DFD-BRD-003
+   (typography & colour standard). */
+
+@font-face{font-family:"Archivo";src:url("../assets/fonts/Archivo-Variable.ttf") format("truetype-variations");font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:"Archivo";src:url("../assets/fonts/Archivo-Italic-Variable.ttf") format("truetype-variations");font-weight:100 900;font-stretch:62% 125%;font-style:italic;font-display:swap}
+
+:root{
+  /* ---- Brand palette (raw) ---- */
+  --ironbark:#131F19;
+  --eucalypt:#2A5C48;
+  --bone:#F2EDE3;
+  --mist:#7E9587;
+  --thermal-amber:#FFA028;
+  --white-hot:#FFE9C4;
+  --amber-deep:#B4720F;
+
+  /* ---- Derived / support ---- */
+  --ironbark-800:#0D1712;
+  --ironbark-700:#182A22;
+  --ironbark-600:#20372C;
+  --eucalypt-bright:#3C7A5F;
+  --eucalypt-light:#8FB49A;
+  --eucalypt-deep:#1F4E3D;
+  --mist-dim:#5E7A6B;
+
+  /* ---- Semantic aliases (dark-first defaults) ---- */
+  --bg-page:var(--ironbark);
+  --bg-inset:var(--ironbark-800);
+  --surface-raised:var(--ironbark-700);
+  --surface-card:var(--ironbark-600);
+
+  --text-primary:var(--bone);
+  --text-secondary:var(--mist);
+  --text-label:var(--mist);
+  --text-inverse:var(--ironbark);
+
+  --border-structure:var(--eucalypt);
+  --border-subtle:color-mix(in srgb,var(--eucalypt) 45%,transparent);
+  --border-strong:var(--eucalypt-bright);
+
+  --detection:var(--thermal-amber);
+  --detection-hot:var(--white-hot);
+  --detection-on-light:var(--amber-deep);
+  --on-detection:var(--ironbark);
+
+  /* ---- Typography ---- */
+  --font-display:"Archivo","Arial Narrow",Calibri,Arial,sans-serif;
+  --font-body:"Archivo",Calibri,"Segoe UI",Arial,sans-serif;
+  --font-mono:ui-monospace,Menlo,Consolas,monospace;
+
+  --weight-display:800;
+  --weight-label:500;
+  --weight-body:400;
+
+  --fs-display-xl:64px;
+  --fs-display-l:44px;
+  --fs-display-m:30px;
+  --fs-heading:22px;
+  --fs-body-l:18px;
+  --fs-body:15px;
+  --fs-caption:13px;
+  --fs-label:12px;
+  --fs-micro:11px;
+
+  --lh-tight:1.05;
+  --lh-heading:1.15;
+  --lh-body:1.55;
+
+  --tracking-display:0.14em;
+  --tracking-heading:0.10em;
+  --tracking-label:0.18em;
+  --tracking-body:0;
+  --tracking-wordmark:0.2em;
+
+  /* ---- Spacing (4px grid) ---- */
+  --space-0:0;
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-5:24px;
+  --space-6:32px;
+  --space-7:48px;
+  --space-8:64px;
+  --space-9:96px;
+
+  --gutter:24px;
+  --page-margin:48px;
+  --max-measure:66ch;
+
+  /* ---- Effects ---- */
+  --radius-0:0;
+  --radius-1:2px;
+  --radius-2:4px;
+  --radius-3:8px;
+  --radius-pill:999px;
+
+  --border-hairline:1px;
+  --border-medium:2px;
+
+  --shadow-none:none;
+  --shadow-panel:0 1px 0 rgba(0,0,0,0.4),0 8px 24px -12px rgba(0,0,0,0.6);
+  --shadow-raised:0 12px 40px -16px rgba(0,0,0,0.7);
+  --glow-detection:0 0 0 1px rgba(255,160,40,0.35),0 0 20px -2px rgba(255,160,40,0.45);
+
+  --ease-standard:cubic-bezier(0.2,0,0,1);
+  --ease-out:cubic-bezier(0.16,1,0.3,1);
+  --dur-fast:120ms;
+  --dur-base:200ms;
+  --dur-slow:340ms;
+}
