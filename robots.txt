@@ -1,0 +1,5 @@
+# PRE-LAUNCH: this blocks all search engines while the real domain isn't live yet.
+# Once you go live on dewpointdetection.com.au, replace this with a normal
+# robots.txt (or just delete it) so the site can be indexed.
+User-agent: *
+Disallow: /
