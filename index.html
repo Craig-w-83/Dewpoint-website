@@ -31,9 +31,7 @@
       <a href="#how-it-works" class="dp-nav-link" style="font-family:var(--font-display); font-size:14px; text-transform:uppercase; letter-spacing:0.08em; color:var(--mist); text-decoration:none; font-weight:500; white-space:nowrap;">How it works</a>
       <a href="#why-dewpoint" class="dp-nav-link" style="font-family:var(--font-display); font-size:14px; text-transform:uppercase; letter-spacing:0.08em; color:var(--mist); text-decoration:none; font-weight:500; white-space:nowrap;">Why Dewpoint</a>
     </div>
-    <a href="#contact" class="dp-desktop-cta" style="text-decoration:none; flex-shrink:0;">
-      <span class="btn btn-detection btn-sm">Get a quote</span>
-    </a>
+    <button class="btn btn-detection btn-sm dp-desktop-cta" data-open-quote style="flex-shrink:0;">Get a quote</button>
     <button class="dp-hamburger" aria-label="Menu" style="display:none; align-items:center; justify-content:center; width:40px; height:40px; flex-shrink:0; background:transparent; border:1px solid var(--border-structure); border-radius:2px; color:var(--bone); cursor:pointer;">
       <i class="icon-menu" data-lucide="menu" style="width:20px; height:20px;"></i>
       <i class="icon-close" data-lucide="x" style="width:20px; height:20px;"></i>
@@ -43,9 +41,7 @@
       <a href="#who-its-for" style="font-family:var(--font-display); font-size:15px; text-transform:uppercase; letter-spacing:0.08em; color:var(--mist); text-decoration:none; font-weight:500; padding:14px 0; border-bottom:1px solid var(--border-subtle);">Who it's for</a>
       <a href="#how-it-works" style="font-family:var(--font-display); font-size:15px; text-transform:uppercase; letter-spacing:0.08em; color:var(--mist); text-decoration:none; font-weight:500; padding:14px 0; border-bottom:1px solid var(--border-subtle);">How it works</a>
       <a href="#why-dewpoint" style="font-family:var(--font-display); font-size:15px; text-transform:uppercase; letter-spacing:0.08em; color:var(--mist); text-decoration:none; font-weight:500; padding:14px 0; border-bottom:1px solid var(--border-subtle);">Why Dewpoint</a>
-      <a href="#contact" style="text-decoration:none; margin-top:16px;">
-        <span class="btn btn-detection btn-md" style="width:100%;">Get a quote</span>
-      </a>
+      <button class="btn btn-detection btn-md" data-open-quote style="width:100%; margin-top:16px;">Get a quote</button>
     </div>
   </nav>
 
@@ -63,7 +59,7 @@
       <h1 style="font-family:var(--font-display); font-weight:800; text-transform:uppercase; letter-spacing:0.05em; font-size:58px; line-height:1.04; margin:0 0 22px; color:var(--bone);">Know what you're<br/>dealing with</h1>
       <p style="font-size:19px; line-height:1.6; color:var(--mist); max-width:46ch; margin:0 0 32px;">Thermal drone surveys that locate targeted fauna including feral pigs, deer and foxes at first light, delivered as GPS-mapped reports that can assist with biosecurity compliance.</p>
       <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:auto;">
-        <a href="#contact" class="btn btn-detection btn-lg">Get a quote</a>
+        <button class="btn btn-detection btn-lg" data-open-quote>Get a quote</button>
         <button class="btn btn-ghost btn-lg" data-sample-report>Request a sample report</button>
       </div>
     </div>
@@ -87,7 +83,7 @@
   </header>
   </div>
 
-  <section id="what-we-do" data-reveal="true" style="border-top:1px solid var(--border-subtle); background:linear-gradient(180deg, var(--ironbark) 0%, var(--ironbark-800) 14%, var(--ironbark-800) 86%, color-mix(in srgb, var(--eucalypt-deep) 30%, var(--ironbark-800)) 100%); position:relative; overflow:hidden;">
+  <section id="what-we-do" data-reveal="true" class="dp-scroll-target" style="border-top:1px solid var(--border-subtle); background:linear-gradient(180deg, var(--ironbark) 0%, var(--ironbark-800) 14%, var(--ironbark-800) 86%, color-mix(in srgb, var(--eucalypt-deep) 30%, var(--ironbark-800)) 100%); position:relative; overflow:hidden;">
     <div style="position:absolute; inset:0; background:radial-gradient(560px 320px at 15% 20%, color-mix(in srgb, var(--eucalypt) 16%, transparent), transparent 70%); pointer-events:none;"></div>
     <div class="dp-container" style="position:relative; z-index:1; max-width:1320px; margin:0 auto; padding:72px 32px;">
       <div style="font-family:var(--font-display); font-weight:600; font-size:16px; text-transform:uppercase; letter-spacing:0.12em; color:var(--mist); margin-bottom:16px;">What we do</div>
@@ -115,7 +111,7 @@
     </div>
   </section>
 
-  <section id="who-its-for" data-reveal="true" class="dp-container" style="max-width:1320px; margin:0 auto; padding:72px 32px; position:relative; overflow:hidden;">
+  <section id="who-its-for" data-reveal="true" class="dp-container dp-scroll-target" style="max-width:1320px; margin:0 auto; padding:72px 32px; position:relative; overflow:hidden;">
     <div style="position:absolute; inset:0; background:radial-gradient(700px 320px at 50% 0%, color-mix(in srgb, var(--eucalypt) 10%, transparent), transparent 70%); pointer-events:none;"></div>
     <div style="position:relative; font-family:var(--font-display); font-weight:600; font-size:16px; text-transform:uppercase; letter-spacing:0.12em; color:var(--mist); margin-bottom:28px;">Who it's for</div>
     <div class="dp-3col-grid" style="position:relative; display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
@@ -137,7 +133,7 @@
     </div>
   </section>
 
-  <section id="how-it-works" data-reveal="true" style="border-top:1px solid var(--border-subtle); border-bottom:1px solid var(--border-subtle); background:var(--ironbark-800); position:relative; overflow:hidden;">
+  <section id="how-it-works" data-reveal="true" class="dp-scroll-target" style="border-top:1px solid var(--border-subtle); border-bottom:1px solid var(--border-subtle); background:var(--ironbark-800); position:relative; overflow:hidden;">
     <div data-parallax="0.14" data-parallax-max="110" style="position:absolute; inset:-120px; z-index:0; overflow:hidden; will-change:transform;">
       <img src="assets/bg-river-mist.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 55%; filter:grayscale(0.85) sepia(0.25) hue-rotate(50deg) saturate(1.6) brightness(0.72) contrast(1.05);" />
       <div style="position:absolute; inset:0; background:linear-gradient(160deg, rgba(19,31,25,0.3) 0%, transparent 50%, color-mix(in srgb, var(--thermal-amber) 27%, transparent) 100%);"></div>
@@ -170,7 +166,7 @@
     </div>
   </section>
 
-  <section id="why-dewpoint" data-reveal="true" style="position:relative; overflow:hidden;">
+  <section id="why-dewpoint" data-reveal="true" class="dp-scroll-target" style="position:relative; overflow:hidden;">
     <div style="position:absolute; inset:0; z-index:0; background:var(--ironbark-800);"></div>
     <div style="position:absolute; inset:0; z-index:1; pointer-events:none; background:linear-gradient(180deg, rgba(13,23,18,0.93) 0%, rgba(13,23,18,0.9) 60%, var(--ironbark) 100%);"></div>
     <div class="dp-container" style="position:relative; z-index:2; max-width:1320px; margin:0 auto; padding:72px 32px;">
@@ -231,7 +227,7 @@
     <div style="position:absolute; inset:0; background:linear-gradient(100deg, rgba(19,31,25,0.32) 0%, transparent 55%, color-mix(in srgb, var(--thermal-amber) 26%, transparent) 100%);"></div>
     <div style="position:absolute; inset:0; background:rgba(13,23,18,0.66);"></div>
   </div>
-  <section id="contact" data-reveal="true" class="dp-container" style="max-width:1320px; margin:0 auto; padding:72px 32px 88px; position:relative; z-index:1;">
+  <section id="contact" data-reveal="true" class="dp-container dp-scroll-target" style="max-width:1320px; margin:0 auto; padding:72px 32px 88px; position:relative; z-index:1;">
     <div style="position:relative;">
       <div style="text-align:center; max-width:640px; margin:0 auto 36px;">
         <div style="font-family:var(--font-display); font-weight:600; font-size:16px; text-transform:uppercase; letter-spacing:0.12em; color:var(--mist); margin-bottom:16px;">Get in touch</div>

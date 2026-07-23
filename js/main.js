@@ -9,7 +9,21 @@
     initQuoteModal();
     initSampleReportPrefill();
     initForms();
+    initNavOffset();
   });
+
+  // Keeps --nav-height in sync with the real, rendered height of the sticky
+  // nav (it changes at the responsive breakpoints where the logo shrinks),
+  // so anchor-link scrolling always lands just below the header, not under it.
+  function initNavOffset() {
+    const nav = document.querySelector(".dp-nav-row");
+    if (!nav) return;
+    const update = () => {
+      document.documentElement.style.setProperty("--nav-height", `${nav.offsetHeight}px`);
+    };
+    update();
+    window.addEventListener("resize", update);
+  }
 
   function initIcons() {
     const tryIcons = (n) => {
@@ -87,7 +101,7 @@
       nav.classList.toggle("is-open");
     };
     hamburger.addEventListener("click", toggle);
-    nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", close));
+    nav.querySelectorAll("a, button").forEach((el) => el.addEventListener("click", close));
   }
 
   function initQuoteModal() {

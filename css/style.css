@@ -68,6 +68,12 @@ button{font:inherit;}
 
 /* ---------------- Layout helpers ---------------- */
 .dp-container{}
+
+/* Sticky-header-aware anchor scrolling: --nav-height is set by JS to the
+   real rendered height of the sticky nav, so clicking a nav link lands
+   the section just below the header instead of underneath it. */
+:root{ --nav-height:116px; }
+.dp-scroll-target{ scroll-margin-top: calc(var(--nav-height) + 16px); }
 @media (max-width:1024px){
   .dp-2col-grid{ grid-template-columns:1fr !important; }
   .dp-3col-grid{ grid-template-columns:repeat(2,1fr) !important; }
