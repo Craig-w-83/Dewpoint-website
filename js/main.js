@@ -111,7 +111,19 @@
     const closeBtns = document.querySelectorAll("[data-close-quote]");
     if (!modal) return;
 
-    const open = () => modal.classList.add("is-open");
+    const open = (e) => {
+      // If the trigger names a service (e.g. the What We Detect cards),
+      // pre-select it in the Service required dropdown.
+      const service = e && e.currentTarget && e.currentTarget.dataset
+        ? e.currentTarget.dataset.quoteService
+        : null;
+      const select = document.getElementById("quote-service");
+      if (service && select) {
+        const match = Array.from(select.options).find((o) => o.value === service || o.text === service);
+        if (match) select.value = match.value || match.text;
+      }
+      modal.classList.add("is-open");
+    };
     const close = () => modal.classList.remove("is-open");
 
     openBtns.forEach((b) => b.addEventListener("click", open));
