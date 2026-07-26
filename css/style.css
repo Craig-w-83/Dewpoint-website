@@ -53,6 +53,10 @@ button{font:inherit;}
 
 /* ---------------- Form fields ---------------- */
 .field{ display:flex; flex-direction:column; gap:6px; }
+/* In side-by-side pairs, grid rows stretch fields to equal height; letting the
+   label grow pushes each input to the bottom of its cell, so paired input
+   boxes stay aligned even when one label wraps to two lines. */
+.field .field-label{ flex:1; }
 .field-label{ font-family:var(--font-display); font-size:11px; text-transform:uppercase; letter-spacing:0.1em; color:var(--mist); font-weight:500; }
 .field input, .field select, .field textarea{
   font-family:var(--font-body); font-size:16px; color:var(--bone);
