@@ -73,6 +73,17 @@ button{font:inherit;}
 /* ---------------- Layout helpers ---------------- */
 .dp-container{}
 
+/* Wide-desktop breathing room: the content column is capped at 1320px inline,
+   which leaves large dead margins on big monitors. These steps let content
+   use more of the screen without touching laptop/tablet/mobile layouts.
+   The nav row is excluded — it already spans full width by design. */
+@media (min-width:1600px){
+  .dp-container:not(.dp-nav-row){ max-width:1440px !important; }
+}
+@media (min-width:1900px){
+  .dp-container:not(.dp-nav-row){ max-width:1560px !important; }
+}
+
 /* Sticky-header-aware anchor scrolling: --nav-height is set by JS to the
    real rendered height of the sticky nav, so clicking a nav link lands
    the section just below the header instead of underneath it. */
