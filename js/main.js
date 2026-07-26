@@ -56,8 +56,8 @@
   }
 
   function initParallax() {
-    const graphicEl = document.getElementById("hero-graphic");
-    const graphicBase = graphicEl ? graphicEl.getBoundingClientRect().top + window.scrollY : null;
+    // The hero stat card is deliberately locked in place — only background
+    // images (data-parallax elements) move on scroll.
     const parallaxEls = Array.from(document.querySelectorAll("[data-parallax]")).map((el) => {
       const rect = el.getBoundingClientRect();
       return {
@@ -71,11 +71,6 @@
 
     const update = () => {
       const vh = window.innerHeight || 800;
-      if (graphicEl && graphicBase != null) {
-        const top = graphicBase - window.scrollY;
-        const shift = Math.max(0, -top * 0.45 + window.scrollY * 0.14);
-        graphicEl.style.transform = `translateY(${Math.min(shift, 220)}px)`;
-      }
       parallaxEls.forEach(({ el, baseTop, height, speed, max }) => {
         const top = baseTop - window.scrollY;
         const centerOffset = top + height / 2 - vh / 2;
