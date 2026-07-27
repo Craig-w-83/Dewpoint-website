@@ -56,7 +56,7 @@
   }
 
   function initParallax() {
-    // The hero stat card is deliberately locked in place — only background
+    // The hero stat card is deliberately locked in place; only background
     // images (data-parallax elements) move on scroll.
     const parallaxEls = Array.from(document.querySelectorAll("[data-parallax]")).map((el) => {
       const rect = el.getBoundingClientRect();
